@@ -23,7 +23,7 @@ To use this module in your Terraform configurations, you can include it as follo
 
 ```hcl
 module "labels" {
-  source      = "git::https://github.com/shanav-tech/terraform-aws-labels.git?ref=v1.0.0"
+  source      = "git::https://github.com/Shanav-Technologies/terraform-aws-labels.git?ref=v1.0.0"
   name        = "app"
   environment = "test"
   label_order = ["name", "environment"]
@@ -35,14 +35,14 @@ module "labels" {
 ```
 
 ## Examples
-For detailed examples on how to use this module, please refer to the [examples](https://github.com/shanav-tech/terraform-aws-labels/tree/master/example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [examples](https://github.com/Shanav-Technologies/terraform-aws-labels/tree/master/example) directory within this repository.
 
 ## License
-This Terraform module is available under the **MIT** License. For more details, please see the [LICENSE](https://github.com/shanav-tech/terraform-aws-labels/blob/master/LICENSE) file.
+This Terraform module is available under the **MIT** License. For more details, please see the [LICENSE](https://github.com/Shanav-Technologies/terraform-aws-labels/blob/master/LICENSE) file.
 
 ## Author
 Your Name
-Replace **MIT** and **shanav-tech** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
+Replace **MIT** and **Shanav-Technologies** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -50,8 +50,8 @@ Replace **MIT** and **shanav-tech** with the appropriate license and your inform
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.8.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.50.0 |
-| <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 4.0.4 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.5.0 |
+| <a name="requirement_tls"></a> [tls](#requirement\_tls) | 4.1.0 |
 
 ## Providers
 
@@ -75,7 +75,7 @@ No resources.
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `"test"` | no |
 | <a name="input_extra_tags"></a> [extra\_tags](#input\_extra\_tags) | Additional tags (e.g. map(`BusinessUnit`,`XYZ`). | `map(string)` | `{}` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(any)` | <pre>[<br>  "name",<br>  "environment"<br>]</pre> | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'shanav-tech'. | `string` | `"shanav-tech"` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'Shanav-Technologies'. | `string` | `"Shanav-Technologies"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `app` or `cluster`). | `string` | `"app"` | no |
 | <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `""` | no |
 

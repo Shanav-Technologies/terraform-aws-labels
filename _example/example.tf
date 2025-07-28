@@ -2,7 +2,7 @@ module "labels" {
   source      = "./../"
   name        = "app"
   environment = "test"
-  managedby  = "shanav-tech"
+  managedby   = "Shanav-Technologies"
   label_order = ["name", "environment"]
   attributes  = ["private"]
   extra_tags = {
